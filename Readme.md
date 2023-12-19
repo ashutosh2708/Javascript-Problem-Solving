@@ -7,11 +7,8 @@ Que. Create a H2 heading element with text - “Hello JavaScript”.Append “fr
 HTML
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document Object Model</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -34,11 +31,8 @@ Que. Create 3 divs with common class name - “box”. Access them &add some uni
 HTML
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document Object Model</title>
     <link rel="stylesheet" href="style.css" />
   </head>
