@@ -1,6 +1,6 @@
 # Javascript Problem Solving
 
-### DOM - Document Object Model
+## DOM - Document Object Model
 
 Que. Create a H2 heading element with text - “Hello JavaScript”.Append “from MIT College students” to this text using JS.
 
@@ -70,4 +70,72 @@ for (let div of divs) {
   div.innerText = `new unique value ${idx}`;
   idx++;
 }
+```
+
+Que. Create a new button element. Give it a text “click me”, background color of red & text color of white.
+Insert the button as the first element inside the body tag
+
+HTML
+
+```html
+<html>
+  <head>
+    <title>Document Object Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
+</html>
+```
+
+Javascript
+
+```javascript
+let newBtn = document.createElement("button");
+newBtn.innerText = "Click me!";
+newBtn.style.color = "white";
+newBtn.style.backgroundColor = "red";
+
+document.querySelector("body").prepend(newBtn);
+```
+
+Que. Create a p tag in html, give it a class & some styling.
+Now create a new class in CSS and try to append this class to the p element.
+Solve this problem using classList.
+Did you notice, how you overwrite the class name when you add a new one?
+
+HTML
+
+```html
+<html>
+  <head>
+    <title>Document Object Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="content">I'm a paragraph.</p>
+    <script src="script.js"></script>
+  </body>
+</html>
+```
+
+CSS
+
+```css
+.content {
+  color: red;
+}
+
+.newClass {
+  background-color: green;
+}
+```
+
+Javascript
+
+```javascript
+let para = document.querySelector("p");
+
+para.classList.add("newClass");
 ```
