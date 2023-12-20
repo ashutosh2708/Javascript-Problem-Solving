@@ -1,6 +1,6 @@
 # Javascript Problem Solving
 
-## DOM - Document Object Model
+## ✔️DOM - Document Object Model 
 
 Que. Create a H2 heading element with text - “Hello JavaScript”.Append “from MIT College students” to this text using JS.
 
@@ -138,4 +138,59 @@ Javascript
 let para = document.querySelector("p");
 
 para.classList.add("newClass");
+```
+
+## ✔️Events in Javascript
+
+Que. Create a toggle button that changes the screen to dark-mode when clicked & light-mode when clicked again.
+
+HTML
+
+```html
+<html>
+  <head>
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="mode">Change Mode</button>
+    <p>Welcome to my website!</p>
+    <script src="script.js"></script>
+  </body>
+</html>
+```
+
+CSS
+
+```css
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+```
+
+Javascript
+
+```javascript
+let modeBtn = document.querySelector("#mode");
+let body = document.querySelector("body");
+let currMode = "light";
+
+modeBtn.addEventListener("click", () => {
+  if (currMode === "light") {
+    currMode = "dark";
+    body.classList.add("dark");
+    body.classList.remove("light");
+  } else {
+    currMode = "light";
+    body.classList.add("light");
+    body.classList.remove("dark");
+  }
+  console.log(currMode);
+});
 ```
